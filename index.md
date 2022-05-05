@@ -2,6 +2,10 @@
 
 原APK文件的MD5值：470c7a83aa9be3e4a17cf484a9d7a6c0
 
+文件名：TapTap_2.26.0-rel.300002_seo.zip
+
+经计算后MD5的值为：470c7a83aa9be3e4a17cf484a9d7a6c0
+
 ## 验证成功
 
 
