@@ -2,19 +2,16 @@
 
 请提交原APK文件的MD5值：470c7a83aa9be3e4a17cf484a9d7a6c0
 
-### 验证成功
+## 验证成功
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```
+证书指纹:
+         MD5: 58:62:06:D6:CB:93:4B:69:E2:8A:D7:04:61:C3:22:4E
+         SHA1: A9:99:C3:23:96:07:DC:BC:9C:7A:2B:49:52:4B:27:BA:14:BA:21:D5
+         SHA256: 4F:D6:70:62:30:0D:3D:9D:6C:38:4F:7E:4E:51:2D:F4:A9:A3:2D:16:5F:CB:35:26:42:8C:8E:9E:3D:4E:44:B7
+         签名算法名称: SHA1withRSA
+         版本: 3
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fairycode-lee/fairycodelee.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
