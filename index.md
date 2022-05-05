@@ -1,6 +1,6 @@
 ## 验证MD5值
 
-You can use the [editor on GitHub](https://github.com/fairycode-lee/fairycodelee.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+请提交原APK文件的MD5值：
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
