@@ -1,6 +1,6 @@
 ## 验证MD5值
 
-请提交原APK文件的MD5值：470c7a83aa9be3e4a17cf484a9d7a6c0
+原APK文件的MD5值：470c7a83aa9be3e4a17cf484a9d7a6c0
 
 ## 验证成功
 
