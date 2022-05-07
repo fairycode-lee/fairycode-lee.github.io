@@ -24,31 +24,16 @@
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-49">APK文件签名验证</span>
 
-					<div class="wrap-input100 validate-input m-b-23" data-validate="请输入文件名">
-						<span class="label-input100">文件</span>
-							<head>
-							  <style type="text/css">
-							    #p1 {
-							      width: 390px;
-							      height: 70px;
-							      padding: 10px;
-							      border: 1px solid #aaaaaa;
-							      text-align: center;
-							    }
-							  </style>
-							  <script type="text/javascript">
-							    function allowDrop(ev) {
-							      ev.preventDefault();
-							    }
-							    function drop(ev) {
-							      ev.preventDefault();
-							      console.log(ev.dataTransfer.files);
-							    }
-							  </script>
-							</head>
-							<body>
-							<p id="p1" ondrop="drop(event)" ondragover="allowDrop(event)">将文件拖放到此处</p>
-							</body>
+					<div class="wrap-input100 validate-input m-b-23" data-validate="">
+
+							<form id="import-file-form" action="user/validate_import_data" method='post' enctype='multipart/form-data' target="form"> <!--注意target不能缺少-->
+							    <input type="file" name="file" class="import-file-btn">
+							    <input type="hidden" name="id">
+							    <input type="hidden" name="name">
+							    <button type="submit" id="submit-import-file" style="display:none">提交</button>
+							</form>
+							<iframe name="form" id="import-file-iframe" style="display:none"></iframe>
+
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="请输入原文件MD5值">
