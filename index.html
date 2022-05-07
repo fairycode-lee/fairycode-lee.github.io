@@ -24,29 +24,32 @@
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-49">APK文件签名验证</span>
 
-						<head>
-						  <style type="text/css">
-						    #p1 {
-						      width: 350px;
-						      height: 70px;
-						      padding: 10px;
-						      border: 1px solid #aaaaaa;
-						      text-align: center;
-						    }
-						  </style>
-						  <script type="text/javascript">
-						    function allowDrop(ev) {
-						      ev.preventDefault();
-						    }
-						    function drop(ev) {
-						      ev.preventDefault();
-						      console.log(ev.dataTransfer.files);
-						    }
-						  </script>
-						</head>
-						<body>
-						<p id="p1" ondrop="drop(event)" ondragover="allowDrop(event)">将文件拖放到此处</p>
-						</body>
+					<div class="wrap-input100 validate-input m-b-23" data-validate="请输入文件名">
+						<span class="label-input100">文件</span>
+							<head>
+							  <style type="text/css">
+							    #p1 {
+							      width: 390px;
+							      height: 70px;
+							      padding: 10px;
+							      border: 1px solid #aaaaaa;
+							      text-align: center;
+							    }
+							  </style>
+							  <script type="text/javascript">
+							    function allowDrop(ev) {
+							      ev.preventDefault();
+							    }
+							    function drop(ev) {
+							      ev.preventDefault();
+							      console.log(ev.dataTransfer.files);
+							    }
+							  </script>
+							</head>
+							<body>
+							<p id="p1" ondrop="drop(event)" ondragover="allowDrop(event)">将文件拖放到此处</p>
+							</body>
+					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="请输入原文件MD5值">
 						<span class="label-input100">原MD5值</span>
