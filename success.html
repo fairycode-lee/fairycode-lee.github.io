@@ -16,18 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script>
 		Bmob.initialize("07d314235a5d2d9c", "123456");
-		Bmob.debug(true)
-		function register(){
-			let params = {
-			    username: document.getElementById("filename").value,
-			    password: document.getElementById("pwd").value
-			}
-			Bmob.User.register(params).then(res => {
-			  location.herf = "success.html";
-			}).catch(err => {
-			 console.log(err)
-			});
-		}
+
 	</script>
 </head>
 
