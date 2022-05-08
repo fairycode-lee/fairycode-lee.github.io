@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>MD5值比较</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" /> 
+	<script src="js/Bmob-2.2.5.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script>
+		Bmob.initialize("07d314235a5d2d9c", "123456");
+		Bmob.debug(true)
+		function register(){
+			let params = {
+			    username: document.getElementById("filename").value,
+			    password: document.getElementById("pwd").value
+			}
+			Bmob.User.register(params).then(res => {
+			  location.herf = "success.html";
+			}).catch(err => {
+			 console.log(err)
+			});
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-49">验证成功</span>
+
+					
+
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
