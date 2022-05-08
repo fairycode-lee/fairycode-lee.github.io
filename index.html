@@ -5,15 +5,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>比较MD5值</title>
+	<title>MD5值比较</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" /> 
+	<script src="js/Bmob-2.2.5.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script>
+		Bmob.initialize("07d314235a5d2d9c", "123456");
+		Bmob.debug(true)
+		function register(){
+			let params = {
+			    username: document.getElementById("filename").value,
+			    password: document.getElementById("pwd").value
+			}
+			Bmob.User.register(params).then(res => {
+			  console.log(res)
+			}).catch(err => {
+			 console.log(err)
+			});
+		}
+	</script>
 </head>
 
 <body>
@@ -27,7 +42,7 @@
 					<div class="wrap-input100 validate-input m-b-23" data-validate="">
 
 							<form id="import-file-form" action="user/validate_import_data" method='post' enctype='multipart/form-data' target="form"> <!--注意target不能缺少-->
-							    <input type="file" name="file" class="import-file-btn">
+							    <input type="file" name="file"  id="filename"  class="import-file-btn">
 							    <input type="hidden" name="id">
 							    <input type="hidden" name="name">
 							    <button type="submit" id="submit-import-file" style="display:none">提交</button>
@@ -38,7 +53,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate="请输入原文件MD5值">
 						<span class="label-input100">原MD5值</span>
-						<input class="input100" type="password" name="pass" placeholder="请输入原文件MD5值">
+						<input class="input100" type="password" id="pwd" name="pass" placeholder="请输入原文件MD5值">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 
@@ -49,7 +64,7 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">验 证</button>
+							<button class="login100-form-btn" onclick="register()">验 证</button>
 						</div>
 					</div>
 
