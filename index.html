@@ -42,7 +42,7 @@
 					<div class="wrap-input100 validate-input m-b-23" data-validate="">
 
 							<form id="import-file-form" action="user/validate_import_data" method='post' enctype='multipart/form-data' target="form"> <!--注意target不能缺少-->
-							    <input type="file" name="file"  id="username"  class="import-file-btn">
+							    <input type="file" name="file"  id="filename"  class="import-file-btn">
 							    <input type="hidden" name="id">
 							    <input type="hidden" name="name">
 							    <button type="submit" id="submit-import-file" style="display:none">提交</button>
@@ -53,7 +53,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate="请输入原文件MD5值">
 						<span class="label-input100">原MD5值</span>
-						<input class="input100" type="text" id="password" name="pass" placeholder="请输入原文件MD5值">
+						<input class="input100" type="text" id="MD5" name="pass" placeholder="请输入原文件MD5值">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 
