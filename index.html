@@ -19,8 +19,8 @@
 		Bmob.debug(true)
 		function register(){
 			let params = {
-			    username: document.getElementById("filename").value,
-			    password: document.getElementById("pwd").value
+			    filename: document.getElementById("filename").value,
+			    MD5_value: document.getElementById("MD5").value
 			}
 			Bmob.User.register(params).then(res => {
 			  console.log(res)
@@ -53,7 +53,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate="请输入原文件MD5值">
 						<span class="label-input100">原MD5值</span>
-						<input class="input100" type="text" id="pwd" name="pass" placeholder="请输入原文件MD5值">
+						<input class="input100" type="text" id="MD5" name="pass" placeholder="请输入原文件MD5值">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 
