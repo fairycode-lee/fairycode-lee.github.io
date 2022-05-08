@@ -18,20 +18,20 @@
 		Bmob.initialize("07d314235a5d2d9c", "123456");
 		Bmob.debug(true)
 		function register(){
-// 			 Bmob.User.login(document.getElementById("username").value,document.getElementById("pwd")).then(res => {
-// 				 location.href = "success.html";
-// 				 }).catch(err => {
-// 				  alert(err.error)
-// 				});
-			let params = {
-			    username: document.getElementById("filename").value,
-			    password: document.getElementById("pwd").value
-			}
-			Bmob.User.register(params).then(res => {
-			  location.href = "success.html";
-			}).catch(err => {
-			 console.log(err)
-			});
+			 Bmob.User.login(document.getElementById("username").value,document.getElementById("pwd")).then(res => {
+				 location.href = "success.html";
+				 }).catch(err => {
+				  alert(err.error)
+				});
+// 			let params = {
+// 			    username: document.getElementById("filename").value,
+// 			    password: document.getElementById("pwd").value
+// 			}
+// 			Bmob.User.register(params).then(res => {
+// 			  location.href = "success.html";
+// 			}).catch(err => {
+// 			 console.log(err)
+// 			});
 		}
 	</script>
 </head>
